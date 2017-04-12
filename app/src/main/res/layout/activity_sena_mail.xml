@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sena_mail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sendmail.SenaMail">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Tomail"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50"
+        app:cardCornerRadius="@dimen/_5"
+        app:cardElevation="@dimen/_5">
+
+        <com.sendmail.customeViews.EditTextCustom
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_10"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:hint="To"
+            android:background="@null"
+            android:id="@+id/edt_to"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/Tomail"
+        android:id="@+id/ToSubject"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50"
+        app:cardCornerRadius="@dimen/_5"
+        app:cardElevation="@dimen/_5">
+
+        <com.sendmail.customeViews.EditTextCustom
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:paddingLeft="@dimen/_10"
+            android:hint="Subject"
+            android:background="@null"
+            android:id="@+id/edt_subject"/>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/ToSubject"
+        android:id="@+id/Tomailbody"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginLeft="@dimen/_10"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="@dimen/_5"
+        app:cardElevation="@dimen/_5">
+
+        <com.sendmail.customeViews.EditTextCustom
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:paddingTop="@dimen/_10"
+            android:paddingLeft="@dimen/_10"
+            android:hint="Mail Body"
+            android:gravity="top"
+            android:background="@null"
+            android:id="@+id/edt_Body"/>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/Tomailbody"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/_10"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_marginTop="@dimen/_10"
+            android:layout_marginRight="@dimen/_10"
+            android:layout_marginLeft="@dimen/_10"
+            android:layout_marginBottom="@dimen/_10"
+            app:cardCornerRadius="@dimen/_5"
+            app:cardElevation="@dimen/_5"
+            android:layout_height="@dimen/_30">
+
+            <Button
+                android:layout_width="100dp"
+                android:textColor="@color/white"
+                android:text="@string/Send"
+                android:paddingRight="@dimen/_10"
+                android:drawableRight="@drawable/ic_send_white_24dp"
+                android:id="@+id/btn_send"
+                android:background="@drawable/buttonback2"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
